@@ -50,7 +50,7 @@ Have you ever used a graphing calculator? You can enter an equation, push a few 
 ### What is the sine function?
 The sine function, sometimes called the sine wave, is a smooth, repetitive oscillation that occurs often in many fields including mathematics, physics, and engineering. A single repetition is shown below. Note that the x axis is given in degrees.
 
-![](/assets/sinpic.jpg?raw=true)
+![](assets/sinpic.png?raw=true)
 
 For this lab, we will use the math library to generate the values that we need. To help you understand the sine function, consider the following Python program.
 ```python
