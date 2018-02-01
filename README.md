@@ -15,8 +15,9 @@
    * Creates a function for drawing the sine function and calls the function from main (3 points)
    * Draw sine function using a loop (4 points)
 * **Part B: 7 points**
-   * Setup window function set world coordinates to requested values (3 points)
+   * Setup window function set world coordinates to requested values (2 points)
    * Setup turtle function draws the x and y axis with the origin at the center (2 points)
+   * Draws from -360 to 360 on the x axis (1 point)
    * Draw cosine function (2 points)
 * **Part C: 1 point**
     * Follows requested project structure and submission format
@@ -91,7 +92,7 @@ Now we can put the two previous programs together to complete our plot. Write a 
     * Move the turtle to that position (leave a line behind).
 * Call your function from your main()
 
-__:warning: This will not produce the expected result. That is intentional.__:
+__:warning: This will not produce the expected result. That is intentional.__
 
 __Show your TA your code.__
 
@@ -102,28 +103,26 @@ _You may continue to work on the remainder of the lab on your own time or in lab
 ## Part B: Making the Plot Better
 You probably think that the program has errors since it does not draw the picture we expect. Maybe you think it looks a bit like a line? What do you think the problem is? Here is a hint...go back and take a look at the values for the sine function as they were calculated and printed in the earlier example.
 
-Now can you see the problem? The value of sin always stays between -1 and 1. This does not give our turtle much room to run.
+Now can you see the problem? The value of sin always stays between -1 and 1. This does not give our turtle much room to run. In order to fix this problem, we need to redesign our “graph paper” so that the coordinates give us more room to plot the values of the sine function. To do this, we will use a method of the `Screen` class called `setworldcoordinates`. This method allows us to change the range of values on the x and y coordinate system for our turtle. Take a look at the documentation for the turtle module to see how to use this method (Global Module Index). Once you have an understanding of the parameters required to use the method, choose an appropriate coordinate system and retry your solution.
 
-In order to fix this problem, we need to redesign our “graph paper” so that the coordinates give us more room to plot the values of the sine function. To do this, we will use a method of the `Screen` class called `setworldcoordinates`. This method allows us to change the range of values on the x and y coordinate system for our turtle. Take a look at the documentation for the turtle module to see how to use this method (Global Module Index). Once you have an understanding of the parameters required to use the method, choose an appropriate coordinate system and retry your solution.
-
-* There are a couple of tricky parts here:
+* :bulb: There are a couple of tricky parts here:
     * You must draw the curve from -360 degrees all the way back to 360 degrees (inclusive)
     * The `math.sin()` function only takes degrees in radians
         * It may be useful to place a print() debug statement after determining x and y so that you can see if their values are reasonable
         * Question:  What is 360 degrees in radians?
     * In order to scale the window properly (setworldcoordinates()) you need to determine the lowest and highest x values as well as the lowest and highest y values
-* Improve upon the solution in the text by using functions:
+* Improve upon the solution in the textbook by using functions:
     * In the main() method, create the Screen and the Turtle, and invoke functions to set up the window, set up the Turtle, and draw the sine curve
     * Create the following functions:
-        * setUpWindow(screenObject)- to set coordinates and background color
-        * setUpTurtle(turtleObject)- to draw the x and y axis with the origin (0, 0) at the center of the screen and place a turtle object in the correct place to start drawing curve
-    * :warning: Make sure the type of the argument sent to each function matches the type of the function parameter
-        * :bulb: Questions:   Do any of the functions require a return statement?
-    * Each of your functions should have accompanying docstrings (see formatting guidelines in the grading rubric)
+        * `setUpWindow(screenObject)`
+            * to set coordinates and background color
+        * `setUpTurtle(turtleObject)`
+            * to draw the x and y axis with the origin (0, 0) at the center of the screen and place a turtle object in the correct place to start drawing curve
+    * :warning: Make sure the type of the argument sent to each function matches the type and order of the function parameter(s)
 
 __Now try this...__
 
-Now that you can plot a sine function, how about trying a different function, such as cosine? Create an additional function called __drawCosineCurve()__.
+Now that you can plot a sine function, how about trying a different function, such as cosine? Create an additional function called `drawCosineCurve()`.
 
 Make sure you test both curve functions in your driver (main function).
 
