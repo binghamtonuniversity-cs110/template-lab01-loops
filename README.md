@@ -11,8 +11,8 @@
 ### Grading Rubric
 
 **_TOTAL: 15 points_**
-* **Part A: 6 points**
-   * Creates a function for drawing the sine function and calls the function from main (2 point)
+* **Part A: 7 points**
+   * Creates a function for drawing the sine function and calls the function from main (3 points)
    * Draw sine function using a loop (4 points)
 * **Part B: 7 points**
    * Setup window function set world coordinates to requested values (3 points)
@@ -50,7 +50,7 @@ Have you ever used a graphing calculator? You can enter an equation, push a few 
 ### What is the sine function?
 The sine function, sometimes called the sine wave, is a smooth, repetitive oscillation that occurs often in many fields including mathematics, physics, and engineering. A single repetition is shown below. Note that the x axis is given in degrees.
 
-![](assets/sinpic.jpg?raw=true)
+![](/assets/sinpic.jpg?raw=true)
 
 For this lab, we will use the math library to generate the values that we need. To help you understand the sine function, consider the following Python program.
 ```python
