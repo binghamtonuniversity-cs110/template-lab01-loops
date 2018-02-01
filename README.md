@@ -63,9 +63,9 @@ main()
 As you can see, the `sin` function from the math library takes a single parameter. This parameter must be a value in “radians” (you may remember this from trigonometry class). Since most of us are used to stating the size of an angle in “degrees”, the math module provides a function, `radians` that will convert from degrees to radians for us.
 Now try it for some other boundary values, like 270 or 360.
 
-###Making the Plot
+### Making the Plot
 
-In order to plot a smooth line, we will use the turtle’s `goto` method. `goto` takes two parameters, __x__ and __y__, and moves the turtle to that location. If the tail is down, a line will be drawn from the previous location to the new location.4
+In order to plot a smooth line, we will use the turtle’s [`goto`](https://docs.python.org/3.3/library/turtle.html?highlight=turtle#turtle.goto) method. `goto` takes two parameters, __x__ and __y__, and moves the turtle to that location. If the tail is down, a line will be drawn from the previous location to the new location.
 
 ```python
 import math
@@ -84,7 +84,14 @@ Recall that the default turtle screen starts with the turtle in the middle at po
 
 Let’s try the `goto` method. Experiment with the method to make sure you understand the coordinate system of the screen. Try it yourself by choosing random numbers for your `goto`. Test all combinations (4) of positive and negative x and y coordinates.
 
-Now we can put the two previous programs together to complete our plot. Write a complete program that does the following __:no_entry_sign: This will not produce the expected result. That is intentional.__:
+Now we can put the two previous programs together to complete our plot. Write a complete program that does the following:
+* Create and set up the turtle and the screen.
+* Write a function that uses a loop to draw a sine curve by iterating the angle from 0 to 360.
+    * Generate the sine value for each angle.
+    * Move the turtle to that position (leave a line behind).
+* Call your function from your main()
+
+__:warning: This will not produce the expected result. That is intentional.__:
 
 __Show your TA your code.__
 
