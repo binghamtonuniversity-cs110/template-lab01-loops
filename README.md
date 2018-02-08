@@ -1,6 +1,6 @@
 #### CS 110 - Spring 2018
 # Lab 3 - Turtle Racing Lab
-## Due Date: 5:00 p.m., February 1st, 2018
+## Due Date: 5:00 p.m., February 8th, 2018
 
 *All programs will be tested on the machines in the LNG103 lab. If your code does not run on the system in this lab, it is considered non-functioning EVEN IF IT RUNS ON YOUR PERSONAL COMPUTER. Always check that your code runs on the lab machines before submitting.*
 
