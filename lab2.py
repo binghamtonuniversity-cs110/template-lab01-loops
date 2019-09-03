@@ -12,12 +12,10 @@ leonardo.color('blue')
 michelangelo.shape('turtle')
 leonardo.shape('turtle')
 
-
 michelangelo.up()          # 4.  Pick up the pen so we don’t get lines
 leonardo.up()
 michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
-
 
 # 5. your code goes here
 
